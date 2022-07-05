@@ -1,0 +1,70 @@
+Info 0    [11:19:15.129] Starting TS Server
+Info 1    [11:19:15.130] Version: 4.7.2
+Info 2    [11:19:15.130] Arguments: /usr/bin/node /home/luke/Programming/templates/fullstack/frontend/node_modules/typescript/lib/tsserver.js --logFile /home/luke/Programming/templates/fullstack/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/c52ab4f15dd568fb97c28b4124728591/tscancellation*
+Info 3    [11:19:15.130] Platform: linux NodeVersion: 18 CaseSensitive: true
+Info 4    [11:19:15.130] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [11:19:15.140] Format host information updated
+Info 6    [11:19:15.148] Search path: /home/luke/Programming/templates/fullstack/frontend
+Info 7    [11:19:15.148] For info: /home/luke/Programming/templates/fullstack/frontend/next.config.js :: Config file name: /home/luke/Programming/templates/fullstack/frontend/tsconfig.json
+Info 8    [11:19:15.148] Creating configuration project /home/luke/Programming/templates/fullstack/frontend/tsconfig.json
+Info 9    [11:19:15.163] Config: /home/luke/Programming/templates/fullstack/frontend/tsconfig.json : {
+ "rootNames": [
+  "/home/luke/Programming/templates/fullstack/frontend/next-env.d.ts",
+  "/home/luke/Programming/templates/fullstack/frontend/pages/api/hello.ts",
+  "/home/luke/Programming/templates/fullstack/frontend/pages/_app.tsx",
+  "/home/luke/Programming/templates/fullstack/frontend/pages/index.tsx"
+ ],
+ "options": {
+  "target": 1,
+  "lib": [
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts",
+   "lib.esnext.d.ts"
+  ],
+  "allowJs": true,
+  "skipLibCheck": true,
+  "strict": true,
+  "forceConsistentCasingInFileNames": true,
+  "noEmit": true,
+  "esModuleInterop": true,
+  "module": 99,
+  "moduleResolution": 2,
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "jsx": 1,
+  "incremental": true,
+  "configFilePath": "/home/luke/Programming/templates/fullstack/frontend/tsconfig.json"
+ }
+}
+Info 10   [11:19:15.316] Starting updateGraphWorker: Project: /home/luke/Programming/templates/fullstack/frontend/tsconfig.json
+Info 11   [11:19:16.152] Finishing updateGraphWorker: Project: /home/luke/Programming/templates/fullstack/frontend/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 835.8347089886665ms
+Info 12   [11:19:16.152] Project '/home/luke/Programming/templates/fullstack/frontend/tsconfig.json' (Configured)
+Info 13   [11:19:16.152] 	Files (217)
+
+Info 14   [11:19:16.152] -----------------------------------------------
+Info 15   [11:19:16.156] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 16   [11:19:16.666] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 510.11496701836586ms
+Info 17   [11:19:16.666] Project '/dev/null/inferredProject1*' (Inferred)
+Info 18   [11:19:16.666] 	Files (204)
+
+Info 19   [11:19:16.666] -----------------------------------------------
+Info 20   [11:19:16.678] AutoImportProviderProject: found 2 root files in 2 dependencies in 11.221262991428375 ms
+Info 21   [11:19:16.700] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 22   [11:19:16.721] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 21.320785999298096ms
+Info 23   [11:19:16.722] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 24   [11:19:16.722] 	Files (24)
+
+Info 25   [11:19:16.722] -----------------------------------------------
+Info 26   [11:19:17.919] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 27   [11:19:18.247] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: true structureIsReused:: Not Elapsed: 327.53931400179863ms
+Info 28   [11:19:18.247] Project '/dev/null/inferredProject1*' (Inferred)
+Info 29   [11:19:18.247] 	Files (390)
+
+Info 30   [11:19:18.247] -----------------------------------------------
+Info 31   [11:19:18.247] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 32   [11:19:18.247] 	Files (24)
+
+Info 33   [11:19:18.247] -----------------------------------------------
+Info 34   [11:19:20.169] Before ensureProjectForOpenFiles:
+Info 35   [11:19:20.170] After ensureProjectForOpenFiles:
+Info 36   [11:19:20.170] got projects updated in background, updating diagnostics for /home/luke/Programming/templates/fullstack/frontend/next.config.js
