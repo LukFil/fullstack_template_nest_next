@@ -3,6 +3,6 @@
     "settings": {
         "next": {
             "rootdir": "frontend/"
-}
-}
+        }
+    }
 }
