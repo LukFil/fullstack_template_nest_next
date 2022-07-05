@@ -1,3 +1,4 @@
 #+title: README
 
-This is a test for commitlint and husky
+* NOTES
+Be cognizant of the fact that this repo is linted and controlled for commit standards by Lint-staged (https://github.com/okonet/lint-staged) and CommitLint (https://github.com/conventional-changelog/commitlint). The standard to which these commits are held to is conventional commits, as described in README of CommitLint
