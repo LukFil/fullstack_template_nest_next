@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+
+  website:
+    container_name: website
+    build:
+      context: .
+      target: ${WEBSITE_ENVIRONMENT}
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./:/app/
+      - /app/node_modules
+    restart: always
+    ports:
+      - ${WEBSITE_PORT}:3000
+    networks:
+      - frontend_network
+
+networks:
+  frontend_network:
