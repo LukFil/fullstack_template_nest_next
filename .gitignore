@@ -4,6 +4,7 @@
 *.lock
 
 ### dotenv ###
+.env.production
 .env
 
 ### Node ###
