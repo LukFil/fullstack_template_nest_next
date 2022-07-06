@@ -1,6 +1,22 @@
 version: '3.8'
 services:
 
+  website:
+    container_name: website
+    build:
+      context: ./frontend/
+      target: ${WEBSITE_ENVIRONMENT}
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${WEBSITE_PORT}:3000
+    command: ${WEBSITE_COMMAND}
+    env_file:
+      - ./frontend/${ENV_VAR}
+    networks:
+      - main_network
+
   server:
     container_name: server
     build:
@@ -14,7 +30,7 @@ services:
       - 9229:9229
     command: ${SERVER_COMMAND}
     env_file:
-      - ./backend/.env
+      - ./backend/${ENV_VAR}
     networks:
       - main_network
     depends_on:
