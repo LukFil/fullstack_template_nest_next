@@ -3,3 +3,7 @@
 
 cd frontend
 yarn lint-staged
+cd ..
+
+cd backend
+yarn lint-staged
