@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+
+  server:
+    container_name: server
+    build:
+      context: .
+      target: ${SERVER_ENVIRONMENT}
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - ${SERVER_PORT}:3000
+      - 9229:9229
+    command: ${SERVER_COMMAND}
+    env_file:
+      - ./.env
+    networks:
+      - main_network
+    depends_on:
+      - postgres
+
+
+  postgres:
+    image: postgres:14
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: ${DB_USR}
+      POSTGRES_PASSWORD: ${DB_PWD}
+      POSTGRES_DB: ${DB_NAME}
+      PG_DATA: /var/lib/postgresql/data
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    env_file:
+      - ./.env
+    networks:
+      - main_network
+
+networks:
+  main_network:
+
+volumes:
+  pgdata:
